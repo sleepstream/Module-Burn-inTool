@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Module_Burn_inTool.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MinBurnInTime" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="PowerMeter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NONE</Value>
+    </Setting>
+    <Setting Name="PrimesPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM2</Value>
+    </Setting>
+    <Setting Name="IgType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">IG243-9</Value>
+    </Setting>
+    <Setting Name="ModulePort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM1</Value>
+    </Setting>
+    <Setting Name="CalValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.0</Value>
+    </Setting>
+    <Setting Name="MinPdDropIg243" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="MinPdDropIg337" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="PowerMetersCalibrate" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PD3Monitoring" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="autoStartBrn" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="PD3Stabilization" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="PD3MaxTimeMonitoringCycle" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="averagingPD3" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SetPD3Drop" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="TimeWaitPD3Check" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="logDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\10.100.80.66\Modules\Stability modules logs\</Value>
+    </Setting>
+    <Setting Name="burnInCurrent" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="udMinDropPowerDrop" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

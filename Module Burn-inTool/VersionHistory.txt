@@ -1,0 +1,46 @@
+﻿1.0.0.1 -	First Release
+
+1.0.0.2 -	HotFix: crashing when Iset > 4000
+
+1.0.0.3 -	Added: PS Voltage monitoring
+
+1.0.1.4 -	Added: Settings for check PD3 period
+			Added: "Power drop" event. If PD3 drops by 100 (can be changed through interface) and checkbox "Shut down module if power drop"
+			is active, emission will be switched off. This option is implemented to protect from optics burn on PD side of module.
+
+1.0.1.5 -	Power drop event now monitored every 10 msec (not changeable). 
+			Default time period for power log is now 60 sec.
+
+1.1.0.6 -	Added: QCW mode support.
+			Added: Log file name is now autoassigned.
+			Added: Type of alarm is now shown if happen while burn-in. (for ex. PD3)
+			Bugfix: Error status is now correctly monitored. 
+
+1.1.1.9 -	Changed: Minor interface redesign to enlarge failure list.
+			Added: Publish version is now displayed in window caption after startup.
+
+1.1.1.10 -	Added: large status text with burn-in time already passed. This textbox will change its color to green when standard (user-changeable) time passed.
+			'Emission' button now change its backcolor to orange when pressed, to better distinguish it's states.
+
+1.1.1.12 -  Автостарт записи лога (по умолчанию 3 минуты) с регулировкой Запись ошибки в лог (раньше писалось только значение PD3 и ток) Проверка серийного номера модуля на соответствие шаблону Разделил таймер на два:
+           Full Time & Cycle Time  для отображения общего времени прогона модуля в случае его отключения и перезапуска (снятие его в ремонт или аварийное отключение) реализовано через лог файл.
+		   При срабатывании ошибки добавил отображение времени наработки Отключении эмиссии при закрытии окна программы/отключении по COM-порту Внешние изменения.
+1.1.1.13 -  Запись логов ведется в каталог на рабочем столе Stability, при его отсутствии - он создается.
+			При подключении добавил проверку связи с модулем, если подключения нет - отключает com-порт и выдает ошибку.
+			Для IG337  при подключении порог срабатывания ошибки датчика PD3  установил на 10 мВ
+			Исправил ошибку при включении эмиссии на IG337 с заданием 0% Исправил ошибку отключения записи лога если запись была запущена вручную, а не автоматически Исправил запись данных в лог
+1.1.2.1 - Added: display full time and cycle time in hours by click on it
+		  reed drop errors from log file and display in programm window, auto scroll list of errors to the end
+
+		  auto reset Errors
+		  remember last com port, board type.
+
+2.0.0.2  - Changed logick of monitoring PD3
+2.0.0.3  - write log to server adress \\10.100.80.66\Modules\TLM\Stability\   if  not possible write to desktop\stability
+			don't light red lite "Failure" if error in log older then 2 days  when press Start Burn button
+2.0.0.5  - Control Power Drop during all test  
+			
+
+
+			Исправил:
+			при физическом отключении модуля без нажатия дисконнект не отключалась программа
